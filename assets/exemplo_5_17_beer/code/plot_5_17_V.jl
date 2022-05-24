@@ -1,7 +1,6 @@
 # This file was generated, do not modify it. # hide
 # Gráfico de momento fletor.
 using Plots
-using LaTeXStrings
 xt = [0, a, a+b, a+b+c, a+b+c+d]
 xs = 0.0:0.01:(a+b+c+d)
 Plots.plot(xs,V.(xs),
