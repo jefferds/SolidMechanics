@@ -25,7 +25,7 @@ $$\sum{F} = 0, \quad \sum{M} = 0 \label{Eq-equilibrio}, \quad V=\dfrac{dM}{dx}$$
 
 ### Cálculo das reações
 
-#### Diagrama de corpo livre:
+### Diagrama de corpo livre:
 
 \figenv{Figura 2 - Diagrama de corpo livre.}{/assets/dcl-5-17.png}{width:50%;}{fig-dcl-5-17}
 
@@ -330,7 +330,7 @@ I3z = (bf * tf^3)/12 + bf*tf*d3^2
 
 Iz = I1z + I2z + I3z
 
-println("Iz = $(round(Iz,digits=6)) m^2")
+println("Iz = $(round(Iz,digits=6)) m^4")
 
 ```
 
