@@ -232,7 +232,6 @@ end;
 ```julia:plot_5_17_M
 # Gráfico de momento fletor.
 using Plots
-using LaTeXStrings
 xt = [0, a, a+b, a+b+c, a+b+c+d]
 xs = 0.0:0.01:(a+b+c+d)
 Plots.plot(xs,M.(xs),
@@ -258,7 +257,6 @@ Plots.savefig(joinpath(@OUTPUT, "plot_5_17_M.png")) # hide
 ```julia:plot_5_17_V
 # Gráfico de momento fletor.
 using Plots
-using LaTeXStrings
 xt = [0, a, a+b, a+b+c, a+b+c+d]
 xs = 0.0:0.01:(a+b+c+d)
 Plots.plot(xs,V.(xs),
