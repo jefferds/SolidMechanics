@@ -13,4 +13,4 @@ I3z = (bf * tf^3)/12 + bf*tf*d3^2
 
 Iz = I1z + I2z + I3z
 
-println("Iz = $(round(Iz,digits=6)) m^2")
+println("Iz = $(round(Iz,digits=6)) m^4")
