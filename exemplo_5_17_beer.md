@@ -296,10 +296,10 @@ Onde
                 <td colspan="14"> bf </td> <td colspan="14"> 261 mm </td>
             </tr>
             <tr height="14">
-                <td colspan="14"> tw </td> <td colspan="14"> 19,3 mm</td>
+                <td colspan="14"> tf </td> <td colspan="14"> 19,3 mm</td>
             </tr>
             <tr height="14">
-                <td colspan="14"> tf </td> <td colspan="14"> 11,6 mm </td>
+                <td colspan="14"> tw </td> <td colspan="14"> 11,6 mm </td>
             </tr>
     </table>~~~
 
@@ -311,7 +311,7 @@ I_z &= I_{1z} + I_{2z} + I_{3z}\\
 I_{nz} &= \dfrac{b \times h^3}{12} + A.d_n^2 \\ 
 \\
 I_{1z} &= \dfrac{b_f \times t_f^3}{12} + b_f.t_f.d_1^2 \\ 
-I_{2z} &= \dfrac{t_f \times (h-2.t_f)^3}{12}\\
+I_{2z} &= \dfrac{t_w \times (h-2.t_f)^3}{12}\\
 I_{3z} &= \dfrac{b_f \times t_f^3}{12} + b_f.t_f.d_3^2
 \end{aligned}$$
 
@@ -320,12 +320,12 @@ I_{3z} &= \dfrac{b_f \times t_f^3}{12} + b_f.t_f.d_3^2
 
 h = 420.0e-3
 bf = 261.0e-3
-tf = 11.6e-3
-tw = 19.3e-3
+tw = 11.6e-3
+tf = 19.3e-3
 d1 = d3 = h/2-tf/2
 
 I1z = (bf * tf^3)/12 + bf*tf*d1^2
-I2z = (tf * (h-2*tf)^3)/12
+I2z = (tw * (h-2*tf)^3)/12
 I3z = (bf * tf^3)/12 + bf*tf*d3^2
 
 Iz = I1z + I2z + I3z
