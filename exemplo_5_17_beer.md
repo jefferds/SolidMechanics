@@ -312,7 +312,7 @@ I_{nz} &= \dfrac{b \times h^3}{12} + A.d_n^2 \\
 \\
 I_{1z} &= \dfrac{b_f \times t_f^3}{12} + b_f.t_f.d_1^2 \\ 
 I_{2z} &= \dfrac{t_f \times (h-2.t_f)^3}{12}\\
-I_{3z} &= \dfrac{b_f \times t_w^3}{12} + b_f.t_w.d_3^2
+I_{3z} &= \dfrac{b_f \times t_f^3}{12} + b_f.t_f.d_3^2
 \end{aligned}$$
 
 ```julia:./solut_beer2011_5_17_Inertia1.jl
@@ -326,7 +326,7 @@ d1 = d3 = h/2-tf/2
 
 I1z = (bf * tf^3)/12 + bf*tf*d1^2
 I2z = (tf * (h-2*tf)^3)/12
-I3z = (bf * tw^3)/12 + bf*tw*d3^2
+I3z = (bf * tf^3)/12 + bf*tf*d3^2
 
 Iz = I1z + I2z + I3z
 
